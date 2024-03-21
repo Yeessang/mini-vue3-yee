@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="test">
+    <p id="child-1">child-1</p>
+    <p id="child-2">child-2</p>
+  </div>
+  <div id="second">
+    123
+  </div>
+  <script>
+    const parent = document.getElementById("test")
+    const second = document.getElementById("second")
+    const p1 = document.getElementById("child-1")
+    const p2 = document.getElementById("child-2")
+    parent.insertBefore(p2, p1)
+    // parent.insertBefore(document.createElement("p"), null)
+  </script>
+</body>
+</html>
